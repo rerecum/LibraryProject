@@ -9,10 +9,14 @@
 
   <ItemGroup>
     <None Remove="808abba995fc3a29f4d4d0bc41bc2ed8_c5_720x720.jpg" />
+    <None Remove="9ac579d7b9d25bfeca811ce59133e2d3.jpg" />
+    <None Remove="ksiazka-ksiazki-podreczniki-nauka-biblioteka.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="808abba995fc3a29f4d4d0bc41bc2ed8_c5_720x720.jpg" />
+    <Resource Include="9ac579d7b9d25bfeca811ce59133e2d3.jpg" />
+    <Resource Include="ksiazka-ksiazki-podreczniki-nauka-biblioteka.jpg" />
   </ItemGroup>
 
 </Project>

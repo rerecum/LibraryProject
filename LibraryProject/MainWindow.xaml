@@ -11,17 +11,17 @@
             <ImageBrush ImageSource="/ksiazka-ksiazki-podreczniki-nauka-biblioteka.jpg"/>
         </Grid.Background>
         <Label Content="BIBLIOTEKA ASKRO" HorizontalAlignment="Left" Margin="561,24,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="22" Foreground="White"/>
-        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="50,117,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="White" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="50,117,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFB5FF7B" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btninfo" Content="NASZA HISTORIA" HorizontalAlignment="Left" Margin="50,201,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="White" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+        <Button x:Name="btninfo" Content="NASZA HISTORIA" HorizontalAlignment="Left" Margin="50,201,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFFB9B9" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btncontact" Content="KONTAKT" HorizontalAlignment="Left" Margin="50,291,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="White" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+        <Button x:Name="btncontact" Content="KONTAKT" HorizontalAlignment="Left" Margin="50,291,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFBFFDFC" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
