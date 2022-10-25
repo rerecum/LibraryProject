@@ -16,7 +16,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btninfo" Content="NASZA HISTORIA" HorizontalAlignment="Left" Margin="50,201,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFFB9B9" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+        <Button x:Name="btninfo" Content="NASZA HISTORIA" HorizontalAlignment="Left" Margin="50,201,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFFB9B9" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btninfo_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

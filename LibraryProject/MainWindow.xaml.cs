@@ -32,5 +32,13 @@ namespace LibraryProject
             f2.ShowDialog();
             this.Close();
         }
+
+        private void btninfo_Click(object sender, RoutedEventArgs e)
+        {
+            /*this.Hide();
+             f2 = new znajdz();
+            f2.ShowDialog();
+            this.Close();*/
+        }
     }
 }
