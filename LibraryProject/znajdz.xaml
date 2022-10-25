@@ -43,11 +43,17 @@
         <TextBox x:Name="tytul_box" HorizontalAlignment="Left" Margin="176,42,0,0" TextWrapping="Wrap" Text="Wpisz tytuł książki" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <TextBox x:Name="autor_box" HorizontalAlignment="Left" Margin="176,97,0,0" TextWrapping="Wrap" Text="Wpisz autora" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <TextBox x:Name="gatunek_box" HorizontalAlignment="Left" Margin="176,151,0,0" TextWrapping="Wrap" Text="Wpisz gatunek książki" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
-        <Button x:Name="btn_search" Content="Szukaj..." HorizontalAlignment="Left" Margin="400,217,0,0" VerticalAlignment="Top" Height="33" Width="149" FontFamily="MV Boli" FontSize="18" FontWeight="Bold" Background="#FF969696">
+        <Button x:Name="btn_search" Content="Szukaj..." HorizontalAlignment="Left" Margin="597,217,0,0" VerticalAlignment="Top" Height="33" Width="149" FontFamily="MV Boli" FontSize="18" FontWeight="Bold" Background="#FF969696">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
+        <TextBox x:Name="wyszukane" HorizontalAlignment="Left" Margin="75,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="671" Height="133" Background="White" BorderBrush="White" FontFamily="MV Boli" FontSize="14" FontWeight="Bold">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Image HorizontalAlignment="Left" Height="194" Margin="576,31,0,0" VerticalAlignment="Top" Width="191" Source="/cropped-ksiazka-z-motylami-bez-tla-1.png"/>
 
     </Grid>
 </Window>
