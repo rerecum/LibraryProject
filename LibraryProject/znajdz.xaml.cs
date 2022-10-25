@@ -33,7 +33,7 @@ namespace LibraryProject
 
         private void btn_search_Click(object sender, RoutedEventArgs e)
         {
-            string myConnection = "";
+            string myConnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\student\\source\\repos\\LibraryProject\\LibraryProject\\Biblioteka.mdf;Integrated Security=True";
             SqlConnection myConn = new SqlConnection(myConnection);
             SqlDataAdapter myDataAdapter = new SqlDataAdapter();
             SqlCommandBuilder cb = new SqlCommandBuilder(myDataAdapter);
