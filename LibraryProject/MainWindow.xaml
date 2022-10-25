@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label Content="BIBLIOTEKA ASKRO" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="18"/>
+        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="104,121,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="White" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btninfo" Content="NASZA HISTORIA" HorizontalAlignment="Left" Margin="104,217,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="White" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btncontact" Content="KONTAKT" HorizontalAlignment="Left" Margin="104,316,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="White" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Window>
