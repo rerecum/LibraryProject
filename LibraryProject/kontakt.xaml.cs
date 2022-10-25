@@ -23,5 +23,13 @@ namespace LibraryProject
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow f2 = new MainWindow();
+            f2.ShowDialog();
+            this.Close();
+        }
     }
 }

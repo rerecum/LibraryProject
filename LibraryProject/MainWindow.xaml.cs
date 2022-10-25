@@ -43,7 +43,10 @@ namespace LibraryProject
 
         private void btncontact_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            kontakt f2 = new kontakt();
+            f2.ShowDialog();
+            this.Close();
         }
     }
 }

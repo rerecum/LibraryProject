@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="kontakt" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/9ac579d7b9d25bfeca811ce59133e2d3.jpg"/>
+        </Grid.Background>
+        <Label Content="+48 733 455 090" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontFamily="Cascadia Code SemiBold" Foreground="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/unnamed.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>
