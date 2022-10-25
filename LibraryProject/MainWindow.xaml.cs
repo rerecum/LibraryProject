@@ -24,5 +24,13 @@ namespace LibraryProject
         {
             InitializeComponent();
         }
+
+        private void btnfind_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            znajdz f2 = new znajdz();
+            f2.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -48,7 +48,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <TextBox x:Name="wyszukane" HorizontalAlignment="Left" Margin="75,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="671" Height="133" Background="White" BorderBrush="White" FontFamily="MV Boli" FontSize="14" FontWeight="Bold">
+        <TextBox x:Name="wyszukane" HorizontalAlignment="Left" Margin="75,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="671" Height="126" Background="White" BorderBrush="White" FontFamily="MV Boli" FontSize="14" FontWeight="Bold" TextChanged="wyszukane_TextChanged">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>

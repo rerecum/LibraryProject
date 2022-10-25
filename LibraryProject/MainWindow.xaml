@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="/ksiazka-ksiazki-podreczniki-nauka-biblioteka.jpg"/>
         </Grid.Background>
         <Label Content="BIBLIOTEKA ASKRO" HorizontalAlignment="Left" Margin="561,24,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="22" Foreground="White"/>
-        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="50,117,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFB5FF7B" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="50,117,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFB5FF7B" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btnfind_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

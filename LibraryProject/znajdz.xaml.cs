@@ -23,5 +23,10 @@ namespace LibraryProject
         {
             InitializeComponent();
         }
+
+        private void wyszukane_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
