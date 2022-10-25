@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[books]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+)
