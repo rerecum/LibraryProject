@@ -21,7 +21,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btncontact" Content="KONTAKT" HorizontalAlignment="Left" Margin="50,291,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFBFFDFC" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold">
+        <Button x:Name="btncontact" Content="KONTAKT" HorizontalAlignment="Left" Margin="50,291,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFBFFDFC" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btncontact_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

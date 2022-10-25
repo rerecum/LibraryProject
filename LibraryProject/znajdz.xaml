@@ -54,6 +54,11 @@
             </TextBox.Effect>
         </TextBox>
         <Image HorizontalAlignment="Left" Height="194" Margin="576,13,0,0" VerticalAlignment="Top" Width="191" Source="/cropped-ksiazka-z-motylami-bez-tla-1.png"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="42,345,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/unnamed.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

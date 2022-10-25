@@ -35,10 +35,15 @@ namespace LibraryProject
 
         private void btninfo_Click(object sender, RoutedEventArgs e)
         {
-            /*this.Hide();
-             f2 = new znajdz();
+            this.Hide();
+            info f2 = new info();
             f2.ShowDialog();
-            this.Close();*/
+            this.Close();
+        }
+
+        private void btncontact_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
