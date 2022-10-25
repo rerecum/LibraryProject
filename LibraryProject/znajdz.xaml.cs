@@ -43,18 +43,23 @@ namespace LibraryProject
             SqlCommand cmd = new SqlCommand("SELECT * FROM [books]", myConn);
             cmd.Connection = myConn;
 
-            /* var reader = cmd.ExecuteReader();
+            var reader = cmd.ExecuteReader();
 
              wyszukane.Text = "";
 
              while (reader.Read())
              {
                  string line = $"{reader["Tytul"]} {reader["Autor"]} {reader["Gatunek"]}";
+                if (
+                    reader["Tytul"].ToString().Contains(tytul_box.Text)&&
+                    reader["Autor"].ToString().Contains(autor_box.Text)&&
+                    reader["Gatunek"].ToString().Contains(gatunek_box.Text))
+                    wyszukane.AppendText(line + "\r\n");
              }
+            
 
-             myConn.Close();
+        myConn.Close();
 
-         }*/
         }
 
         private void tytul_box_TextChanged(object sender, TextChangedEventArgs e)
