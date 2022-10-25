@@ -40,8 +40,29 @@ namespace LibraryProject
             myConn.Open();
             DataSet ds = new DataSet();
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM [Table]", myConn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM [books]", myConn);
             cmd.Connection = myConn;
+
+           /* var reader = cmd.ExecuteReader();
+
+            wyszukane.Text = "";
+
+            while (reader.Read())
+            {
+                string line = $"{reader["Tytul"]} {reader["Autor"]} {reader["Gatunek"]}";
+                if (tytul_box.Text == "Adam")
+                    {
+
+                    }
+                }
+            }
+
+            myConn.Close();
+
+        }*/
+
+        private void tytul_box_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
