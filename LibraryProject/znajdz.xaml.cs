@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +28,20 @@ namespace LibraryProject
 
         private void wyszukane_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void btn_search_Click(object sender, RoutedEventArgs e)
+        {
+            string myConnection = "";
+            SqlConnection myConn = new SqlConnection(myConnection);
+            SqlDataAdapter myDataAdapter = new SqlDataAdapter();
+            SqlCommandBuilder cb = new SqlCommandBuilder(myDataAdapter);
+            myConn.Open();
+            DataSet ds = new DataSet();
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM [Table]", myConn);
+            cmd.Connection = myConn;
 
         }
     }

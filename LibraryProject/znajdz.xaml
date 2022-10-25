@@ -43,7 +43,7 @@
         <TextBox x:Name="tytul_box" HorizontalAlignment="Left" Margin="176,42,0,0" TextWrapping="Wrap" Text="Wpisz tytuł książki" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <TextBox x:Name="autor_box" HorizontalAlignment="Left" Margin="176,97,0,0" TextWrapping="Wrap" Text="Wpisz autora" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <TextBox x:Name="gatunek_box" HorizontalAlignment="Left" Margin="176,151,0,0" TextWrapping="Wrap" Text="Wpisz gatunek książki" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
-        <Button x:Name="btn_search" Content="Szukaj..." HorizontalAlignment="Left" Margin="597,217,0,0" VerticalAlignment="Top" Height="33" Width="149" FontFamily="MV Boli" FontSize="18" FontWeight="Bold" Background="#FF969696">
+        <Button x:Name="btn_search" Content="Szukaj..." HorizontalAlignment="Left" Margin="597,210,0,0" VerticalAlignment="Top" Height="33" Width="149" FontFamily="MV Boli" FontSize="18" FontWeight="Bold" Background="#FF969696" Click="btn_search_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -53,7 +53,7 @@
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Image HorizontalAlignment="Left" Height="194" Margin="576,31,0,0" VerticalAlignment="Top" Width="191" Source="/cropped-ksiazka-z-motylami-bez-tla-1.png"/>
+        <Image HorizontalAlignment="Left" Height="194" Margin="576,13,0,0" VerticalAlignment="Top" Width="191" Source="/cropped-ksiazka-z-motylami-bez-tla-1.png"/>
 
     </Grid>
 </Window>
