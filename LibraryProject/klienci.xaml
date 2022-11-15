@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryProject"
         mc:Ignorable="d"
-        Title="info" Height="450" Width="800">
+        Title="klienci" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="763*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/9ac579d7b9d25bfeca811ce59133e2d3.jpg"/>
         </Grid.Background>
-        <Image HorizontalAlignment="Left" Height="165" Margin="168,17,0,0" VerticalAlignment="Top" Width="481" Source="/2560px-Human_evolution_scheme.svg.png"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" Text="Nasza biblioteka istnieje już od lat 20' i cieszy sie wielka popularnoscia w skali panstwowej. Uzyskalismy tytul najlepszej biblioteki oraz order eldoki na freestyle. Pare lat temu odwiedzil nas burmistrz miasta Canzen gdzie razem omawialismy dalszy plan dzialania biblioteki. Doszlismy do wniosku, aby stworzyc aplikacje mobilna, ktora teraz panstwo przegladaja... Tworzy je jeden z najbardziej zdolnych programistow - cudowny, przystojny i inteligenty Kacper Hnatyszyn, ktoremu dziekujemy za wspolprace. Jest to dla nas zaszczyt." VerticalAlignment="Top" Height="88" Width="668" Foreground="White" FontSize="14" FontFamily="Ink Free"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="53,305,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click">
+        <Button Content="" HorizontalAlignment="Left" Margin="22,347,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click" Grid.Column="2">
             <Button.Background>
                 <ImageBrush ImageSource="/unnamed.png"/>
             </Button.Background>
