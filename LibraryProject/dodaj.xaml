@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryProject"
         mc:Ignorable="d"
-        Title="dodaj" Height="450" Width="800">
+        Title="dodaj" Height="450" Width="450">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/9ac579d7b9d25bfeca811ce59133e2d3.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click">
+        <Button Content="" HorizontalAlignment="Left" Margin="23,346,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/unnamed.png"/>
             </Button.Background>
         </Button>
-        <TextBox x:Name="tytul" HorizontalAlignment="Left" Margin="41,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
-        <TextBox x:Name="tytul_Copy" HorizontalAlignment="Left" Margin="41,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
-        <TextBox x:Name="tytul_Copy1" HorizontalAlignment="Left" Margin="41,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="359"/>
-        <Label Content="Podaj tytuł" HorizontalAlignment="Left" Margin="41,90,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-        <Label Content="Podaj autora" HorizontalAlignment="Left" Margin="41,136,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-        <Label Content="Podaj gatunek" HorizontalAlignment="Left" Margin="41,182,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="tytul" HorizontalAlignment="Left" Margin="41,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="autor" HorizontalAlignment="Left" Margin="41,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="gatunek" HorizontalAlignment="Left" Margin="41,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <Label Content="Podaj tytuł" HorizontalAlignment="Left" Margin="41,37,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Podaj autora" HorizontalAlignment="Left" Margin="41,83,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Podaj gatunek" HorizontalAlignment="Left" Margin="41,129,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="dodaj" Content="DODAJ KSIĄŻKĘ" HorizontalAlignment="Left" Margin="273,217,0,0" VerticalAlignment="Top" BorderBrush="#FF56E8AF" Background="#FF56E8AF" FontWeight="Bold" Height="40" Width="127"/>
 
     </Grid>
 </Window>

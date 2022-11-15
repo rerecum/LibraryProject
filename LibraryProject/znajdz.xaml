@@ -40,9 +40,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="tytul_box" HorizontalAlignment="Left" Margin="176,42,0,0" TextWrapping="Wrap" Text="Wpisz tytuł książki" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E" TextChanged="tytul_box_TextChanged"/>
-        <TextBox x:Name="autor_box" HorizontalAlignment="Left" Margin="176,97,0,0" TextWrapping="Wrap" Text="Wpisz autora" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
-        <TextBox x:Name="gatunek_box" HorizontalAlignment="Left" Margin="176,151,0,0" TextWrapping="Wrap" Text="Wpisz gatunek książki" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
+        <TextBox x:Name="tytul_box" HorizontalAlignment="Left" Margin="176,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E" TextChanged="tytul_box_TextChanged"/>
+        <TextBox x:Name="autor_box" HorizontalAlignment="Left" Margin="176,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
+        <TextBox x:Name="gatunek_box" HorizontalAlignment="Left" Margin="176,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <Button x:Name="btn_search" Content="Szukaj..." HorizontalAlignment="Left" Margin="597,210,0,0" VerticalAlignment="Top" Height="33" Width="149" FontFamily="MV Boli" FontSize="18" FontWeight="Bold" Background="#FF969696" Click="btn_search_Click">
             <Button.Effect>
                 <DropShadowEffect/>
