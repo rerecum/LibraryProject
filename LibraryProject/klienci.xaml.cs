@@ -19,6 +19,8 @@ namespace LibraryProject
     /// <summary>
     /// Logika interakcji dla klasy info.xaml
     /// </summary>
+        
+    public struct klienteria { public string Imie; public string Nazwisko; public string Klasa; public string PESEL; public int? Id_ksiazki; } 
     public partial class info : Window
     {
         public info()
@@ -52,6 +54,11 @@ namespace LibraryProject
             cmd.Connection = myConn;
 
             var reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+            }
 
         }
     }
