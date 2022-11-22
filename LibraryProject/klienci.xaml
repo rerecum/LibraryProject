@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LibraryProject"
         mc:Ignorable="d"
         Title="klienci" Height="450" Width="800">
-    <Grid>
+    <Grid DataContext="{Binding RelativeSource = {RelativeSource Self}}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="29*"/>
             <ColumnDefinition Width="8*"/>
@@ -20,7 +20,7 @@
                 <ImageBrush ImageSource="/unnamed.png"/>
             </Button.Background>
         </Button>
-        <DataGrid x:Name="Grid" Grid.Column="2" Margin="5,49,42,113" SelectionChanged="DataGrid_SelectionChanged_1"/>
+        <DataGrid x:Name="Grid" Grid.Column="2" IsReadOnly="True" ItemsSource="{Binding bind}" Margin="5,49,42,113" SelectionChanged="DataGrid_SelectionChanged_1"/>
 
     </Grid>
 </Window>

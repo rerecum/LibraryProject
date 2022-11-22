@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace LibraryProject
 {
@@ -21,8 +22,9 @@ namespace LibraryProject
     /// </summary>
         
     public struct klienteria { public string Imie; public string Nazwisko; public string Klasa; public string PESEL; public int? Id_ksiazki; } 
-    public partial class info : Window
+    public partial class info : Window, INotifyPropertyChanged
     {
+        public List<klienteria> bind { get; set; } = new List<klienteria>();
         public info()
         {
             InitializeComponent();
@@ -82,10 +84,13 @@ namespace LibraryProject
                     Id_ksiazki = (int?)reader.GetValue(5)
                 };
 
-                Grid.Items.Add(klientor);
+                bind.Add(klientor);
             }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(bind)));
             myConn.Close();
     }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
