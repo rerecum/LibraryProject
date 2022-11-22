@@ -20,6 +20,7 @@
                 <ImageBrush ImageSource="/unnamed.png"/>
             </Button.Background>
         </Button>
+        <DataGrid Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="5,49,42,113"/>
 
     </Grid>
 </Window>
