@@ -57,7 +57,14 @@ namespace LibraryProject
 
             while (reader.Read())
             {
-
+                var klientor = new klienteria
+                {
+                    Imie = reader.GetString(1),
+                    Nazwisko = reader.GetString(2),
+                    Klasa = reader.GetString(3),
+                    PESEL = reader.GetString(4),
+                    Id_ksiazki = (int?)reader.GetValue(5)
+                };
             }
 
         }
