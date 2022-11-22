@@ -35,6 +35,7 @@ namespace LibraryProject
 
         private void btninfo_Click(object sender, RoutedEventArgs e)
         {
+
             this.Hide();
             info f2 = new info();
             f2.ShowDialog();
