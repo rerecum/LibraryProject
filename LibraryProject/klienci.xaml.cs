@@ -55,6 +55,8 @@ namespace LibraryProject
 
             var reader = cmd.ExecuteReader();
 
+            var klientos = new List<klienteria>();
+
             while (reader.Read())
             {
                 var klientor = new klienteria
@@ -65,7 +67,13 @@ namespace LibraryProject
                     PESEL = reader.GetString(4),
                     Id_ksiazki = (int?)reader.GetValue(5)
                 };
+
+                klientos.Add(klientor);
             }
+
+            Grid.ItemsSource = klientos;
+
+            myConn.Close();
 
         }
     }
