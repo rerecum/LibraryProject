@@ -24,7 +24,7 @@ namespace LibraryProject
     public struct klienteria { public string Imie; public string Nazwisko; public string Klasa; public string PESEL; public int? Id_ksiazki; } 
     public partial class info : Window, INotifyPropertyChanged
     {
-        public List<klienteria> bind { get; set; } = new List<klienteria>();
+        public List<klienteria> ViewBind { get; set; } = new List<klienteria>();
         public info()
         {
             InitializeComponent();

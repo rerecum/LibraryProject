@@ -20,7 +20,7 @@
                 <ImageBrush ImageSource="/unnamed.png"/>
             </Button.Background>
         </Button>
-        <DataGrid x:Name="Grid" Grid.Column="2" IsReadOnly="True" ItemsSource="{Binding bind}" Margin="5,49,42,113" SelectionChanged="DataGrid_SelectionChanged_1"/>
+        <DataGrid x:Name="Grid" Grid.Column="2" IsReadOnly="True" ItemsSource="{Binding ViewBind, UpdateSourceTrigger=PropertyChanged}" Margin="5,49,42,113" SelectionChanged="DataGrid_SelectionChanged_1"/>
 
     </Grid>
 </Window>
