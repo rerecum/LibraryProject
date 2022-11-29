@@ -41,7 +41,7 @@ namespace LibraryProject
 
             var reader = cmd.ExecuteReader();
 
-            var klientos = new List<klienteria>();
+            // var klientos = new List<klienteria>();
 
             Grid.Columns.Add(new DataGridTextColumn
             {
@@ -84,9 +84,9 @@ namespace LibraryProject
                     Id_ksiazki = (int?)reader.GetValue(5)
                 };
 
-                bind.Add(klientor);
+                ViewBind.Add(klientor);
             }
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(bind)));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ViewBind)));
             myConn.Close();
     }
 
