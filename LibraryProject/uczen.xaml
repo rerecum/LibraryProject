@@ -1,0 +1,26 @@
+﻿<Window x:Class="LibraryProject.uczen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryProject"
+        mc:Ignorable="d"
+        Title="uczen" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/9ac579d7b9d25bfeca811ce59133e2d3.jpg"/>
+        </Grid.Background>
+        <Button Content="" HorizontalAlignment="Left" Margin="23,346,0,0" VerticalAlignment="Top" Height="68" Width="73" BorderBrush="White" BorderThickness="0,0,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/unnamed.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="imie" HorizontalAlignment="Left" Margin="41,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="nazwisko" HorizontalAlignment="Left" Margin="41,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="klasa" HorizontalAlignment="Left" Margin="41,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="PESEL" HorizontalAlignment="Left" Margin="41,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <TextBox x:Name="id_ksiazki" HorizontalAlignment="Left" Margin="41,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
+        <Button x:Name="addstudent" Content="DODAJ UCZNIA" HorizontalAlignment="Left" Margin="544,147,0,0" VerticalAlignment="Top" BorderBrush="#FF56E8AF" Background="#FF56E8AF" FontWeight="Bold" Height="40" Width="127" Click="dodaj_Click"/>
+
+    </Grid>
+</Window>

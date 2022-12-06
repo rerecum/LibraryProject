@@ -11,17 +11,22 @@
             <ImageBrush ImageSource="/ksiazka-ksiazki-podreczniki-nauka-biblioteka.jpg"/>
         </Grid.Background>
         <Label Content="BIBLIOTEKA ASKRO" HorizontalAlignment="Left" Margin="561,24,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="22" Foreground="White"/>
-        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="50,117,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFB5FF7B" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btnfind_Click">
+        <Button x:Name="btnfind" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="50,59,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFB5FF7B" Background="#FFC1FFA5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btnfind_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btninfo" Content="KLIENCI" HorizontalAlignment="Left" Margin="50,201,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFFB9B9" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btninfo_Click">
+        <Button x:Name="btninfo" Content="KLIENCI" HorizontalAlignment="Left" Margin="50,142,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFFB9B9" Background="#FFFFC6A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btninfo_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btncontact" Content="DODAJ" HorizontalAlignment="Left" Margin="50,291,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFBFFDFC" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btncontact_Click">
+        <Button x:Name="btncontact" Content="DODAJ" HorizontalAlignment="Left" Margin="50,228,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFBFFDFC" Background="#FFA5ECFF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btncontact_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_klienteria" Content="DODAJ KLIENTA" HorizontalAlignment="Left" Margin="50,318,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFFF1B0" Background="#FFFFE3A5" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btn_klienteria_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

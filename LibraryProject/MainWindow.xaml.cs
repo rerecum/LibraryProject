@@ -49,5 +49,14 @@ namespace LibraryProject
             f2.ShowDialog();
             this.Close();
         }
+
+        private void btn_klienteria_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            uczen f2 = new uczen();
+            f2.ShowDialog();
+            this.Close();
+        }
+
     }
 }
