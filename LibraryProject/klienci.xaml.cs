@@ -18,7 +18,7 @@ using System.ComponentModel;
 namespace LibraryProject
 {
     /// <summary>
-    /// Logika interakcji dla klasy info.xaml
+    /// Logika interakcji dla dklasy info.xaml
     /// </summary>
         
     public struct klienteria {
