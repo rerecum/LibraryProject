@@ -26,7 +26,15 @@ namespace LibraryProject
             InitializeComponent();
         }
 
-        private void dodaj_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow f2 = new MainWindow();
+            f2.ShowDialog();
+            this.Close();
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
         {
             string myConnection = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\student\Source\Repos\LibraryProject\LibraryProject\Biblioteka.mdf; Integrated Security = True";
             SqlConnection myConn = new SqlConnection(myConnection);

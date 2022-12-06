@@ -20,7 +20,7 @@
         <TextBox x:Name="klasa" HorizontalAlignment="Left" Margin="41,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
         <TextBox x:Name="PESEL" HorizontalAlignment="Left" Margin="41,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
         <TextBox x:Name="id_ksiazki" HorizontalAlignment="Left" Margin="41,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="359"/>
-        <Button x:Name="addstudent" Content="DODAJ UCZNIA" HorizontalAlignment="Left" Margin="544,147,0,0" VerticalAlignment="Top" BorderBrush="#FF56E8AF" Background="#FF56E8AF" FontWeight="Bold" Height="40" Width="127" Click="dodaj_Click"/>
+        <Button x:Name="Add" Content="DODAJ UCZNIA" HorizontalAlignment="Left" Margin="544,147,0,0" VerticalAlignment="Top" BorderBrush="#FF56E8AF" Background="#FF56E8AF" FontWeight="Bold" Height="40" Width="127" Click="Add_Click"/>
 
     </Grid>
 </Window>
