@@ -78,7 +78,6 @@ namespace LibraryProject
         /// <summary>
         /// Obsluga przyciskow do przechodzenia na inne zakladki w MainWindow.xaml
         /// </summary>
-        /// 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();

@@ -25,6 +25,10 @@ namespace LibraryProject
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Obsluga przyciskow do przechodzenia na inne zakladki w delete.xaml.cs
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
                this.Hide();
@@ -32,6 +36,11 @@ namespace LibraryProject
                f2.ShowDialog();
                this.Close();
         }
+
+        /// <summary>
+        /// Laczenie z baza. Przycisk powodujacy usuniecie danych wpisanych przez uzytkownika w textbox.
+        /// <paramref name="btndelete"/> <paramref name="DELETE FROM"/>
+        /// </summary>
 
         private void btndelete_Click(object sender, RoutedEventArgs e)
         {

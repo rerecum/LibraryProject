@@ -26,6 +26,9 @@ namespace LibraryProject
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Obsluga przyciskow do przechodzenia na inne zakladki w MainWindow.xaml
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -34,6 +37,12 @@ namespace LibraryProject
             this.Close();
         }
 
+        /// <summary>
+        /// Laczenie z baza danych. Przycisk usuwajacy dany podmiot, w tym przypadku osobe, znadujaca sie juz wczesniej w bazie danych.
+        /// <paramref name="Add_Click"/> <paramref name="DELETE FROM"/>
+        /// Dane zostaja trwale usuniete. Warunkiem jest POPRAWNE i DOKLADNE wpisanie danych do usuniecia, w innym przypadku nic nie ulegnie zmianie.
+        /// </summary>
+       
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             string myConnection = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\student\Source\Repos\LibraryProject\LibraryProject\Biblioteka.mdf; Integrated Security = True";

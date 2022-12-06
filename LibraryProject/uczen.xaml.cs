@@ -26,6 +26,9 @@ namespace LibraryProject
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Obsluga przyciskow do przechodzenia na inne zakladki w MainWindow.xaml
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -34,6 +37,13 @@ namespace LibraryProject
             this.Close();
         }
 
+        /// <summary>
+        /// Laczenie z baza danych. Przycisk pozwalajacy dodawac dane do tabeli klienci, w ktorej znajduja sie takie parametry jak:
+        /// <paramref name="Imie"/><paramref name="Nazwisko"/><paramref name="Klasa"/><paramref name="PESEL"/><paramref name="Id_ksiazki"/>
+        /// Uzytkownik musi wpisac kazde z tych danych do textbox'ow a nastepnie kliknac przycisk aby wywolac dzialnie kodu.
+        /// Wszystkie dane zostaja zapisane wowczas do tabeli "klienci".
+        /// </summary>
+        
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             string myConnection = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\student\Source\Repos\LibraryProject\LibraryProject\Biblioteka.mdf; Integrated Security = True";

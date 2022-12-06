@@ -35,9 +35,11 @@ namespace LibraryProject
         /// <summary>
         ///         klienteria, klientos i inne zmienne
         ///         odpowiadaja za poprawne funkcjonowanie kodu.
-        ///         
+        ///         Ich celem jest wywolanie funkcji powodujacej pojawienie sie danych w DataGrid.
+        ///         Wszystkie dane da sie filtrowac.
         ///    (<paramref name="klienteria"/>,<paramref name="klientor"/>
         ///    <paramref name="klientos"/> <paramref name="ViewBind"/></summary>  
+        ///    
         public List<klienteria> ViewBind { get; set; } = new List<klienteria>();
         public info()
         {
