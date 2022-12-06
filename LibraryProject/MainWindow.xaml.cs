@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace LibraryProject
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Obsluga przyciskow do przechodzenia na inne zakladki w MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -69,7 +69,7 @@ namespace LibraryProject
         private void btndeletest_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            delete f2 = new delete();
+            usunucznia f2 = new usunucznia();
             f2.ShowDialog();
             this.Close();
         }

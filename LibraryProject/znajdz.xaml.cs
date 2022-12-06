@@ -31,6 +31,11 @@ namespace LibraryProject
 
         }
 
+        /// <summary>Void dla przycisku laczacy z baza danych i wysylajacy dane ktore zostana wyswietlone w textbox
+        ///    (<paramref name="myConn"/>,<paramref name="cmd.Connection"/>).</summary>
+        /// <param name="reader">Odczytuje i wypisuje dane z bazy.</param>
+        /// <param name="line">.</param>
+       
         private void btn_search_Click(object sender, RoutedEventArgs e)
         {
             string myConnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\student\\source\\repos\\LibraryProject\\LibraryProject\\Biblioteka.mdf;Integrated Security=True";
@@ -47,7 +52,10 @@ namespace LibraryProject
 
              wyszukane.Text = "";
 
-             while (reader.Read())
+            /// <summary>Odczyt i wypis danych z tabeli.</summary>
+            /// <returns>Oddaje wartosci zgodne z danymi w tabeli.</returns>
+
+            while (reader.Read())
              {
                  string line = $"{reader["Tytul"]} {reader["Autor"]} {reader["Gatunek"]} {reader["Id"]}";
                 if (
@@ -67,6 +75,10 @@ namespace LibraryProject
 
         }
 
+        /// <summary>
+        /// Obsluga przyciskow do przechodzenia na inne zakladki w MainWindow.xaml
+        /// </summary>
+        /// 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();

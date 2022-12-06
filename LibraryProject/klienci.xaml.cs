@@ -17,10 +17,11 @@ using System.ComponentModel;
 
 namespace LibraryProject
 {
-    /// <summary>
-    /// Logika interakcji dla dklasy info.xaml
-    /// </summary>
-        
+    /// <summary>DataGrid wyswietla tabele klientow
+    ///    (<paramref name="Imie"/>,<paramref name="Nazwisko"/>
+    ///    <paramref name="Klasa"/> <paramref name="PESEL"/>
+    ///    <paramref name="Id_ksiazki"/>).</summary>
+
     public struct klienteria {
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
@@ -30,6 +31,13 @@ namespace LibraryProject
     } 
     public partial class info : Window, INotifyPropertyChanged
     {
+
+        /// <summary>
+        ///         klienteria, klientos i inne zmienne
+        ///         odpowiadaja za poprawne funkcjonowanie kodu.
+        ///         
+        ///    (<paramref name="klienteria"/>,<paramref name="klientor"/>
+        ///    <paramref name="klientos"/> <paramref name="ViewBind"/></summary>  
         public List<klienteria> ViewBind { get; set; } = new List<klienteria>();
         public info()
         {
@@ -70,6 +78,9 @@ namespace LibraryProject
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// Obsluga przyciskow do przechodzenia na inne zakladki w MainWindow.xaml
+        /// </summary>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
