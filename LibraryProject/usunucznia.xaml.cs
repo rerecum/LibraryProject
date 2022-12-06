@@ -17,24 +17,24 @@ using System.Windows.Shapes;
 namespace LibraryProject
 {
     /// <summary>
-    /// Logika interakcji dla klasy delete.xaml
+    /// Logika interakcji dla klasy usunucznia.xaml
     /// </summary>
-    public partial class delete : Window
+    public partial class usunucznia : Window
     {
-        public delete()
+        public usunucznia()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-               this.Hide();
-               MainWindow f2 = new MainWindow();
-               f2.ShowDialog();
-               this.Close();
+            this.Hide();
+            MainWindow f2 = new MainWindow();
+            f2.ShowDialog();
+            this.Close();
         }
 
-        private void btndelete_Click(object sender, RoutedEventArgs e)
+        private void Add_Click(object sender, RoutedEventArgs e)
         {
             string myConnection = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\student\Source\Repos\LibraryProject\LibraryProject\Biblioteka.mdf; Integrated Security = True";
             SqlConnection myConn = new SqlConnection(myConnection);
@@ -47,11 +47,12 @@ namespace LibraryProject
             cmd.Connection = myConn;
             try
             {
-                cmd.CommandText = "DELETE FROM [books] WHERE Tytul = '" + tytul.Text + "' AND AUTOR = '" + autor.Text + "' AND GATUNEK = '" + gatunek.Text + "'";
+                cmd.CommandText = "DELETE FROM [klienci] WHERE Imie = '" + imie.Text + "' AND Nazwisko = '" + nazwisko.Text + "' AND Klasa = '" + klasa.Text + "' AND PESEL = '" + PESEL.Text + "' AND Id_ksiazki = '" + id_ksiazki.Text + "'";
                 cmd.ExecuteNonQuery();
-            }catch(Exception er)
+            }
+            catch (Exception er)
             {
-                MessageBox.Show("Ksiazka jest wypozyczona");
+                MessageBox.Show("Nie mozna usunac ucznia");
             }
             myConn.Close();
         }

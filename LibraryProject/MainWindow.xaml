@@ -31,7 +31,12 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Button x:Name="btndelete" Content="ZNAJDZ KSIAZKE" HorizontalAlignment="Left" Margin="645,318,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFF3737" Background="#FFFF3737" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btndelete_Click">
+        <Button x:Name="btndelete" Content="USUŃ KSIĄŻKĘ" HorizontalAlignment="Left" Margin="645,318,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFFF3737" Background="#FFFF3737" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btndelete_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btndeletest" Content="USUŃ UCZNIA" HorizontalAlignment="Left" Margin="645,228,0,0" VerticalAlignment="Top" FontFamily="MV Boli" BorderBrush="#FFD937FF" Background="#FFD937FF" Height="59" Width="129" Cursor="AppStarting" FontWeight="Bold" Click="btndeletest_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
