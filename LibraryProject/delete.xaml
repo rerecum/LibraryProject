@@ -18,7 +18,6 @@
         <TextBox x:Name="tytul" HorizontalAlignment="Left" Margin="42,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <TextBox x:Name="autor" HorizontalAlignment="Left" Margin="42,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <TextBox x:Name="gatunek" HorizontalAlignment="Left" Margin="42,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
-        <TextBox x:Name="Id_ksiazki" HorizontalAlignment="Left" Margin="42,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="White" Foreground="#FF009A9E"/>
         <Button x:Name="btn_delete" Content="usuń książkę..." HorizontalAlignment="Left" Margin="266,217,0,0" VerticalAlignment="Top" Height="33" Width="149" FontFamily="MV Boli" FontSize="18" FontWeight="Bold" Background="#FF969696" Click="btndelete_Click">
             <Button.Effect>
                 <DropShadowEffect/>
@@ -27,7 +26,6 @@
         <Label Content="Podaj tytuł" HorizontalAlignment="Left" Margin="42,0,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Podaj autora" HorizontalAlignment="Left" Margin="43,42,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Podaj gatunek" HorizontalAlignment="Left" Margin="42,88,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-        <Label Content="Podaj id" HorizontalAlignment="Left" Margin="42,132,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
 
     </Grid>
 </Window>
