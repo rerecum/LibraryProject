@@ -58,5 +58,12 @@ namespace LibraryProject
             this.Close();
         }
 
+        private void btndelete_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            delete f2 = new delete();
+            f2.ShowDialog();
+            this.Close();
+        }
     }
 }
