@@ -21,13 +21,19 @@ namespace LibraryProject
     /// Logika interakcji dla klasy info.xaml
     /// </summary>
         
-    public struct klienteria { public string Imie; public string Nazwisko; public string Klasa; public string PESEL; public int? Id_ksiazki; } 
+    public struct klienteria {
+        public string Imie { get; set; }
+        public string Nazwisko { get; set; }
+        public string Klasa { get; set; }
+        public string PESEL { get; set; }
+        public int? Id_ksiazki { get; set; }
+    } 
     public partial class info : Window, INotifyPropertyChanged
     {
         public List<klienteria> ViewBind { get; set; } = new List<klienteria>();
         public info()
         {
-            InitializeComponent();
+            
 
             string myConnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\student\\source\\repos\\LibraryProject\\LibraryProject\\Biblioteka.mdf;Integrated Security=True";
             SqlConnection myConn = new SqlConnection(myConnection);
@@ -37,41 +43,12 @@ namespace LibraryProject
             DataSet ds = new DataSet();
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM [klienci]", myConn);
-            cmd.Connection = myConn;
+
 
             var reader = cmd.ExecuteReader();
 
-            // var klientos = new List<klienteria>();
-
-            Grid.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Imie",
-                Binding = new Binding("Imie")
-            });
-
-            Grid.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Nazwisko",
-                Binding = new Binding("Nazwisko")
-            });
-
-            Grid.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Klasa",
-                Binding = new Binding("Klasa")
-            });
-
-            Grid.Columns.Add(new DataGridTextColumn
-            {
-                Header = "PESEL",
-                Binding = new Binding("PESEL")
-            });
-
-            Grid.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Id_ksiazki",
-                Binding = new Binding("Id_ksiazki")
-            });
+            var klientos = new List<klienteria>();
+            InitializeComponent();
 
             while (reader.Read())
             {
@@ -87,10 +64,11 @@ namespace LibraryProject
                 ViewBind.Add(klientor);
             }
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ViewBind)));
+
             myConn.Close();
     }
 
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -98,16 +76,6 @@ namespace LibraryProject
             MainWindow f2 = new MainWindow();
             f2.ShowDialog();
             this.Close();
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void DataGrid_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

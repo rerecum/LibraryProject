@@ -21,7 +21,7 @@
         <Label Content="Podaj tytuł" HorizontalAlignment="Left" Margin="41,37,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Podaj autora" HorizontalAlignment="Left" Margin="41,83,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Podaj gatunek" HorizontalAlignment="Left" Margin="41,129,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-        <Button x:Name="dodaj" Content="DODAJ KSIĄŻKĘ" HorizontalAlignment="Left" Margin="273,217,0,0" VerticalAlignment="Top" BorderBrush="#FF56E8AF" Background="#FF56E8AF" FontWeight="Bold" Height="40" Width="127" Click="dodaj_Click"/>
+        <Button x:Name="dodaj" Content="DODAJ KSIĄŻKĘ" HorizontalAlignment="Left" Margin="273,266,0,0" VerticalAlignment="Top" BorderBrush="#FF56E8AF" Background="#FF56E8AF" FontWeight="Bold" Height="40" Width="127" Click="dodaj_Click"/>
 
     </Grid>
 </Window>

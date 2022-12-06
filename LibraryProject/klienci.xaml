@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryProject"
         mc:Ignorable="d"
+         DataContext="{Binding RelativeSource = {RelativeSource Self}}"
         Title="klienci" Height="450" Width="800">
-    <Grid DataContext="{Binding RelativeSource = {RelativeSource Self}}">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="29*"/>
             <ColumnDefinition Width="8*"/>
@@ -20,7 +21,25 @@
                 <ImageBrush ImageSource="/unnamed.png"/>
             </Button.Background>
         </Button>
-        <DataGrid x:Name="Grid" Grid.Column="2" IsReadOnly="True" ItemsSource="{Binding ViewBind, UpdateSourceTrigger=PropertyChanged}" Margin="5,49,42,113" SelectionChanged="DataGrid_SelectionChanged_1"/>
+        <DataGrid x:Name="Grid" Grid.Column="2" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding ViewBind}" Margin="5,49,42,113">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                Header = "Imie"
+                Binding = "{Binding Imie}"/>
+                <DataGridTextColumn
+                Header = "Nazwisko"
+                Binding = "{Binding Nazwisko}"/>
+                <DataGridTextColumn
+                Header = "Klasa"
+                Binding = "{Binding Klasa}"/>
+                <DataGridTextColumn
+                Header = "PESEL"
+                Binding = "{Binding PESEL}"/>
+                <DataGridTextColumn
+                Header = "Id_ksiazki"
+                Binding = "{Binding Id_ksiazki}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>

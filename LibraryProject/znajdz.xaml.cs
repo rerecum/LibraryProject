@@ -49,7 +49,7 @@ namespace LibraryProject
 
              while (reader.Read())
              {
-                 string line = $"{reader["Tytul"]} {reader["Autor"]} {reader["Gatunek"]}";
+                 string line = $"{reader["Tytul"]} {reader["Autor"]} {reader["Gatunek"]} {reader["Id"]}";
                 if (
                     reader["Tytul"].ToString().Contains(tytul_box.Text)&&
                     reader["Autor"].ToString().Contains(autor_box.Text)&&
